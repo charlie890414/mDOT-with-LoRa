@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="5">
+    <title>點滴監控</title>
+    <style>
+
+        html, body {
+            height: 80%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .item {
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <h1 style="position: absolute;">101-1</h1>
+            {% if rows[0][1] == 'working' %}
+            <img src="http://127.0.0.1:5000/green.png" title="{{ rows[0][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% else %}
+            <img src="http://127.0.0.1:5000/red.png" title="{{ rows[0][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% endif %}
+            <img src="http://127.0.0.1:5000/bed.png" title="{{ rows[0][0] }}" srcset="">
+        </div>
+        <div class="item">
+            <h1 style="position: absolute;">102-1</h1>
+            {% if rows[1][1] == 'working' %}
+            <img src="http://127.0.0.1:5000/green.png" title="{{ rows[1][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% else %}
+            <img src="http://127.0.0.1:5000/red.png" title="{{ rows[1][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% endif %}
+            <img src="http://127.0.0.1:5000/bed.png" title="{{ rows[1][0] }}" srcset="">
+        </div>
+        <div class="item">
+            <h1 style="position: absolute;">201-1</h1>
+            {% if rows[2][1] == 'working' %}
+            <img src="http://127.0.0.1:5000/green.png" title="{{ rows[2][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% else %}
+            <img src="http://127.0.0.1:5000/red.png" title="{{ rows[2][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% endif %}
+            <img src="http://127.0.0.1:5000/bed.png" title="{{ rows[2][0] }}" srcset="">
+        </div>
+        <div class="item">
+            <h1 style="position: absolute;">202-1</h1>
+            {% if rows[3][1] == 'working' %}
+            <img src="http://127.0.0.1:5000/green.png" title="{{ rows[3][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% else %}
+            <img src="http://127.0.0.1:5000/red.png" title="{{ rows[3][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% endif %}
+            <img src="http://127.0.0.1:5000/bed.png" title="{{ rows[3][0] }}" srcset="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="item">
+            <h1 style="position: absolute;">101-2</h1>
+            {% if rows[4][1] == 'working' %}
+            <img src="http://127.0.0.1:5000/green.png" title="{{ rows[4][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% else %}
+            <img src="http://127.0.0.1:5000/red.png" title="{{ rows[4][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% endif %}
+            <img src="http://127.0.0.1:5000/bed.png" title="{{ rows[4][0] }}" srcset="">
+        </div>
+        <div class="item">
+            <h1 style="position: absolute;">102-2</h1>
+            {% if rows[5][1] == 'working' %}
+            <img src="http://127.0.0.1:5000/green.png" title="{{ rows[5][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% else %}
+            <img src="http://127.0.0.1:5000/red.png" title="{{ rows[5][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% endif %}
+            <img src="http://127.0.0.1:5000/bed.png" title="{{ rows[5][0] }}" srcset="">
+        </div>
+        <div class="item">
+            <h1 style="position: absolute;">201-2</h1>
+            {% if rows[6][1] == 'working' %}
+            <img src="http://127.0.0.1:5000/green.png" title="{{ rows[6][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% else %}
+            <img src="http://127.0.0.1:5000/red.png" title="{{ rows[6][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% endif %}
+            <img src="http://127.0.0.1:5000/bed.png" title="{{ rows[6][0] }}" srcset="">
+        </div>
+        <div class="item">
+            <h1 style="position: absolute;">202-2</h1>
+            {% if rows[7][1] == 'working' %}
+            <img src="http://127.0.0.1:5000/green.png" title="{{ rows[7][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% else %}
+            <img src="http://127.0.0.1:5000/red.png" title="{{ rows[7][0] }}" srcset="" style="height: 30px; width: 30px; top: 0px;">
+            {% endif %}
+            <img src="http://127.0.0.1:5000/bed.png" title="{{ rows[7][0] }}" srcset="">
+        </div>
+    </div>
+</body>
+
+</html>
